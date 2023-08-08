@@ -9,6 +9,7 @@ Changelogs:
 - Merubah Nilai String ro.surface_flinger.set_idle_timer_ms ke 500
 - Merubah Nilai String ro.surface_flinger.set_touch_timer_ms ke 50
 - Menghapus Touchscreen Tweak karena menyebabkan lag di beberapa device
+- Mengubah ke versi R (Release)
 
 Cara Menguninstall dgn benar:
 
