@@ -1,6 +1,6 @@
-{
+e{
     "version": "v2.2B",
     "versionCode": 221,
-    "zipUrl": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/675649198/9a339edf-6df4-47db-8413-fb1fb15cb65a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230808%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230808T033131Z&X-Amz-Expires=300&X-Amz-Signature=12c9d4c82f9f381bffb1ea5372bc3db56a094b178bd438e4c751501b24fda303&X-Amz-SignedHeaders=host&actor_id=141639047&key_id=0&repo_id=675649198&response-content-disposition=attachment%3B%20filename%3DNgenTouch.2.2.BETA.zip&response-content-type=application%2Foctet-stream",
+    "zipUrl": "https://github.com/eraselk/NgenTouch-OpenSource/releases/download/v2.2B/NgenTouch.2.2.BETA.zip",
     "changelog": "https://raw.githubusercontent.com/eraselk/NgenTouch-OpenSource/main/CHANGELOG.md"
 }
