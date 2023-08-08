@@ -8,3 +8,4 @@
 - Merubah Nilai String windowsmgr.max_events_per_sec ke 200
 - Merubah Nilai String ro.surface_flinger.set_idle_timer_ms ke 500
 - Menghapus Touchscreen Tweak karena menyebabkan lag di beberapa device
+- Fix Uninstaller Error
