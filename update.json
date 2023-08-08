@@ -1,6 +1,6 @@
 {
-    "version": "2.2B",
-    "versionCode": "23",
+    "version": "2.2 Beta",
+    "versionCode": "22B",
     "zipUrl": "https://github.com/eraselk/NgenTouch-OpenSource/releases/download/untagged-29f7d1725c899c2c218c/NgenTouch.2.2.BETA.zip",
     "changelog": "https://raw.githubusercontent.com/eraselk/NgenTouch-OpenSource/main/CHANGELOG.md"
 }
