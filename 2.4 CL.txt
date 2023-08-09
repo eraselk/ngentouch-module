@@ -1,0 +1,3 @@
+- Meningkatkan Responsivitas sentuhan
+- Fix Lag di beberapa device
+- Meningkatkan kelicinan layar
