@@ -1,0 +1,19 @@
+- Mengubah Value string view.touch_slop ke 5
+- Mengubah Value string debug.duration_tap ke 30
+- Mengubah Value string debug.slide.duration ke 10
+- Mengubah Value string multi_press_timeout ke 170
+______________________________
+[!] Cara Menguninstall modul NgenTouch
+
+- Hapus Modul NgenTouch di magisk terlebih dahulu
+- Buka termux/mt manager
+
+Di termux ketik:
+
+su -c sh /sdcard/NgenTouchUninstall.sh
+
+Di MT Manager:
+
+- Cari File "NgenTouchUninstall.sh" di internal storage
+- Klik file NgenTouchUninstal.sh
+- Centang Root trus klik Menjalankan
