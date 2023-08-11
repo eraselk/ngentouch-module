@@ -1,0 +1,1 @@
+- Fix Bug Mode tidak terganti.
