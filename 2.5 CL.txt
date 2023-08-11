@@ -1,0 +1,10 @@
+- Menambahkan 2 Mode yaitu Extreme Mode dan Normal Mode, Cara mengganti mode nya tinggal ketik "su -c ngentouch" di terminal emulator atau termux.
+
+- Mengubah Value beberapa string.
+
+- Fix Lag (Terakhir).
+
+- Dan lain lain.
+_______________________________
+Catatan:
+* Extreme Mode nya agak brutal dikit 💀
