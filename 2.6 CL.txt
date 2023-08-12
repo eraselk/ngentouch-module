@@ -1,0 +1,10 @@
+Minor Update | v2.6
+________________________
+
+•> Menambahkan beberapa string untuk responsivitas.
+•> Mengubah beberapa value string.
+•> Menghapus beberapa string.
+•> Script di compile menggunakan shc.
+
+Catatan:
+- Support Device 64 bit dan 32 bit.
