@@ -1,0 +1,2 @@
+- Mengubah beberapa value string
+- Fix Tidak bisa memasuki menu (Gara gara di encrypt)
