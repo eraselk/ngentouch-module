@@ -1,6 +1,6 @@
 {
-    "version": "v2.6",
-    "versionCode": 260,
-    "zipUrl": "https://github.com/eraselk/NgenTouch-OpenSource/releases/download/v2.6/2.6.zip",
-    "changelog": "https://raw.githubusercontent.com/eraselk/NgenTouch-OpenSource/Changelog-branch/2.6%20CL.txt"
+    "version": "v2.6.1",
+    "versionCode": 261,
+    "zipUrl": "https://github.com/eraselk/NgenTouch-OpenSource/releases/download/v2.6.1/2.6.1.zip",
+    "changelog": "https://raw.githubusercontent.com/eraselk/NgenTouch-OpenSource/Changelog-branch/2.6.1%20CL.txt"
 }
