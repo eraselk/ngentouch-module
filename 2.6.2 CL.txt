@@ -1,0 +1,4 @@
+### NgenTouch v2.6.2 - EOL
+
+- Menambahkan 1 string untuk mengoptinalkan scrolling.
+- EOL (End Of Life) tidak akan di update lagi kedepannya.
