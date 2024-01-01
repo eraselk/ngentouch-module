@@ -1,6 +1,6 @@
 {
-    "version": "v3.3.2",
-    "versionCode": 332,
-    "zipUrl": "https://github.com/eraselk/NgenTouch-OpenSource/releases/download/v3.3.2/NgenTouch_3.3.2_rebuild.zip",
-    "changelog": "https://raw.githubusercontent.com/eraselk/NgenTouch-OpenSource/Changelog-branch/3.3.2-CL.txt"
+    "version": "v3.3.3",
+    "versionCode": 333,
+    "zipUrl": "https://github.com/eraselk/NgenTouch-OpenSource/releases/download/v3.3.3/NgenTouch_3.3.3_2024-01-01.zip",
+    "changelog": "https://raw.githubusercontent.com/eraselk/NgenTouch-OpenSource/Changelog-branch/CL-3.3.3.txt"
 }
