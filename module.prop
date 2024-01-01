@@ -1,7 +1,7 @@
 id=ngentouch_module
 name=NgenTouch Reworked.
 version=v3.3.3
-versionCode=332
+versionCode=333
 author=eraselk @ Module-Builder
 description=This module's function is to improve your screen sensitivity and reduce delay. Just click remove, and the module is deleted automatically.
 updateJson=https://raw.githubusercontent.com/eraselk/ngentouch-module/main/update.json
