@@ -37,7 +37,5 @@ set_prop ro.surface_flinger.set_touch_timer_ms 1
 set_prop persist.vendor.qti.inputopts.movetouchslop 0.1
 set_prop persist.vendor.qti.inputopts.enable true
 set_prop debug.sf.hw 0
-set_prop debug.hwui.skip_empty_damage true
-set_prop debug.sf.max_igbp_list_size 46200
 set_prop debug.hwui.overdraw false
 set_prop debug.hwui.render_dirty_regions false
