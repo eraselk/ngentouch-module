@@ -1,0 +1,3 @@
+# NgenTouch 3.3.3 Changelog
+- Improve Smoothness and Responsivess by disabling hardware acceleration and empty buffer
+- Adjust HWUI Cache
