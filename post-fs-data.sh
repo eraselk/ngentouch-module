@@ -13,7 +13,7 @@ set_prop view.touch_slop 3
 set_prop TapInterval 1ms
 set_prop TapDragInterval 1ms
 set_prop QuietInterval 1ms
-set_prop windowsmgr.max_events_per_sec 200
+set_prop windowsmgr.max_events_per_sec 800
 set_prop MultitouchMinDistance 1px
 set_prop MultitouchSettleInterval 1ms
 set_prop view.scroll_friction 0
@@ -37,7 +37,4 @@ set_prop persist.vendor.qti.inputopts.movetouchslop 0.1
 set_prop persist.vendor.qti.inputopts.enable true
 set_prop debug.sf.hw 0
 set_prop debug.hwui.skip_empty_damage true
-set_prop debug.sf.high_fps_early_gl_phase_offset_ns 925000
-set_prop ro.hwui.texture_cache_flush_rate 0.5
-set_prop ro.hwui.layer_cache_flush_rate 0.5
-set_prop ro.hwui.path_cache_flush_rate 0.5
+set_prop debug.sf.high_fps_early_gl_phase_offset_ns 92500
