@@ -17,7 +17,7 @@ echo '0' > $i/oppo_tp_limit_enable
 echo '0' > $i/oplus_tp_limit_enable
 echo '1' > $i/oplus_tp_direction
 done
-# universal/snap
+# Universal, SnapDragon, and mtk
 if [[ -e "/sys/devices/virtual/touch/touch_dev/bump_sample_rate" ]]; then
 echo "1" > /sys/devices/virtual/touch/touch_dev/bump_sample_rate
 elif [[ -e "/sys/touchpanel/double_tap" ]]; then
@@ -32,6 +32,9 @@ echo '8002' > /sys/class/touch/switch/set_touchscreen;
 echo '11000' > /sys/class/touch/switch/set_touchscreen;
 echo '13060' > /sys/class/touch/switch/set_touchscreen;
 echo '14005' > /sys/class/touch/switch/set_touchscreen;
+# Disable touch boost mtk, thanks to @nuuwy0 and @SeeNyx.
+elif [[ -e "/proc/perfmgr/tchbst/user/usrtch" ]]; then
+echo "enable 0" > /proc/perfmgr/tchbst/user/usrtch
 fi
 
 # touchscreen priority
