@@ -1,0 +1,2 @@
+- Remove & Adjust some code in post-fs-data.sh
+- Add TouchBoost Disabler for MTK, thanks [@nuuwy0](https://t.me/nuuwy0) and [@SeeNyx](https://t.me/SeeNyx) !
