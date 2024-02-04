@@ -13,7 +13,7 @@ set_prop view.touch_slop 3
 set_prop TapInterval 1ms
 set_prop TapDragInterval 1ms
 set_prop QuietInterval 1ms
-set_prop windowsmgr.max_events_per_sec 800
+set_prop windowsmgr.max_events_per_sec 500
 set_prop MultitouchMinDistance 1px
 set_prop MultitouchSettleInterval 1ms
 set_prop view.scroll_friction 0
@@ -30,11 +30,5 @@ set_prop touch.orientationAware 0
 set_prop touch.pressure.calibration amplitude
 set_prop ro.surface_flinger.max_frame_buffer_acquired_buffers 3
 set_prop vendor.perf.gestureflingboost.enable true
-set_prop persist.sys.scrollingcache 4
 set_prop view.minimum_fling_velocity 10
 set_prop ro.surface_flinger.set_touch_timer_ms 1
-set_prop persist.vendor.qti.inputopts.movetouchslop 0.1
-set_prop persist.vendor.qti.inputopts.enable true
-set_prop debug.sf.hw 0
-set_prop debug.hwui.skip_empty_damage true
-set_prop debug.sf.high_fps_early_gl_phase_offset_ns 92500
