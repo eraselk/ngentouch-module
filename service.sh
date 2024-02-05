@@ -1,10 +1,10 @@
 #!/system/bin/sh
 source /data/adb/modules/ngentouch_module/script/libcgroup.sh
 # ------ apalah
-sleep 40s
+sleep 50s
 (
 settings put secure multi_press_timeout 120
-settings put secure long_press_timeout 200
+settings put secure long_press_timeout 250
 settings put global block_untrusted_touches 0
 # Realme
 for i in /proc/touchpanel; do
