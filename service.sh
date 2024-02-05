@@ -1,7 +1,6 @@
 #!/system/bin/sh
 source /data/adb/modules/ngentouch_module/script/libcgroup.sh
-# ------ apalah
-sleep 50s
+sleep 60s
 (
 settings put secure multi_press_timeout 120
 settings put secure long_press_timeout 250
@@ -42,6 +41,10 @@ change_task_cgroup "android.phone" "foreground" "stune"
 #Touch Boost
 change_task_cgroup "system_server" "top-app" "cpuset"
 change_task_cgroup "system_server" "foreground" "stune"
+# Max Priority
+renice -n -20 $(pgrep -f surfaceflinger)
+renice -n -20 $(pgrep -f android.phone)
+renice -n -20 $(pgrep -f system_server)
 
 # INFO
 su -lp 2000 -c "cmd notification post -S bigtext -t '[🔔] NgenTouch INFO' 'Tag' 'NgenTouch Module has been running  ✅                                        Please Enjoy your Responsivess and Smoothess.'"
