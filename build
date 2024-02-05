@@ -1,24 +1,21 @@
 #!/system/bin/sh
-VER="3.3.4"
+VER="3.3.5-test"
 build_date=$(date +"%Y-%m-%d")
-CHATID="-1002131426848"
+CHATID="-1001802548906"
 TOKEN="6877892509:AAG7xeKonLHrStTdoPmISZH_68U1JH_ZO7E"
 
 function send_file() {
 curl -F chat_id=${CHATID} -F document=@$1 -F caption="$2" "https://api.telegram.org/bot${TOKEN}/sendDocument"
 }
 
-rm -rf source
-rm build_mod.log
-rm NgenTouch_${VER}_${build_date}.zip
-
 # Clone repo
+git clone https://github.com/eraselk/ngentouch-module source
 (
     clear
     sleep 3s
     echo
     echo "[~] Zipping.."
-    cd source && zip -r9 ../NgenTouch_${VER}_${build_date}.zip * -x README.md .git update.json *build
+    cd source; find . -type f -exec chmod 777 {} +;zip -r9 ../NgenTouch_${VER}_${build_date}.zip * -x README.md .git update.json *build
     cd ..
     echo
     echo "[âˆš] DONE"
@@ -30,6 +27,4 @@ clear
 echo "[~] UPLOAD to TG"
 send_file NgenTouch_${VER}_${build_date}.zip "Version: ${VER} || Build Date: ${build_date}"
 send_file build_mod.log "Build Log"
-rm build_mod.log
-rm NgenTouch_${VER}_${build_date}.zip
-rm -rf source
+
