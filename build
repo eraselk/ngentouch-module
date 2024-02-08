@@ -1,5 +1,5 @@
 #!/system/bin/sh
-VER="3.3.5-test"
+VER="3.3.5"
 build_date=$(date +"%Y-%m-%d")
 CHATID="-1001802548906"
 TOKEN="6877892509:AAG7xeKonLHrStTdoPmISZH_68U1JH_ZO7E"
