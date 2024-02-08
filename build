@@ -21,7 +21,7 @@ build() {
     fi
     if [ ! -e "${PREFIX}/bin/zip" ]; then
         apt install zip -y
-    fid
+    fi
     sleep 3s
     echo
     echo "[~] Zipping.."
