@@ -3,7 +3,7 @@ source /data/adb/modules/ngentouch_module/script/libcgroup.sh
 sleep 60s
 (
 settings put secure multi_press_timeout 120
-settings put secure long_press_timeout 250
+settings put secure long_press_timeout 200
 settings put global block_untrusted_touches 0
 # Realme
 for i in /proc/touchpanel; do
