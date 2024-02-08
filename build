@@ -8,7 +8,7 @@ function send_file() {
 curl -F chat_id=${CHATID} -F document=@$1 -F caption="$2" "https://api.telegram.org/bot${TOKEN}/sendDocument"
 }
 
-(
+build() {
     clear
 echo "NgenTouch Build Started"
 sleep 1s
@@ -30,7 +30,8 @@ fi
 clear
 echo "[~] UPLOAD to TG"
 send_file ../NgenTouch_${VER}_${build_date}.zip "Version: ${VER} || Build Date: ${build_date}"
-) > build_mod.log 2>&1
+}
+build > build_mod.log 2>&1
 
 send_file build_mod.log "Build Log"
 exit 0
