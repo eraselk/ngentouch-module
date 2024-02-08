@@ -7,6 +7,9 @@ TOKEN="6877892509:AAG7xeKonLHrStTdoPmISZH_68U1JH_ZO7E"
 function send_file() {
 curl -F chat_id=${CHATID} -F document=@$1 -F caption="$2" "https://api.telegram.org/bot${TOKEN}/sendDocument"
 }
+# Update source
+git clone https://github.com/eraselk/ngentouch-module source
+cd .. & cd source
 
 build() {
     clear
