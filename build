@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/usr/bin/bash
 VER="3.3.5"
 build_date=$(date +"%Y-%m-%d")
 CHATID="-1001802548906"
@@ -10,19 +10,27 @@ curl -F chat_id=${CHATID} -F document=@$1 -F caption="$2" "https://api.telegram.
 
 (
     clear
+echo "NgenTouch Build Started"
+sleep 1s
+echo "Installing env packages"
+if [ ! -e "${PREFIX}/bin/curl" ]; then
+apt install curl -y
+if [ ! -e "${PREFIX}/bin/zip" ]; then
+apt install zip -y
+fi
     sleep 3s
     echo
     echo "[~] Zipping.."
     zip -r9 ../NgenTouch_${VER}_${build_date}.zip * -x README.md .git update.json *build
-    cd ..
     echo
-    echo "[âˆš] DONE"
+    echo "[√] DONE"
     echo
-) > build_mod.log 2>&1
 
 # Upload to Telegram
 clear
 echo "[~] UPLOAD to TG"
-send_file NgenTouch_${VER}_${build_date}.zip "Version: ${VER} || Build Date: ${build_date}"
-send_file build_mod.log "Build Log"
+send_file ../NgenTouch_${VER}_${build_date}.zip "Version: ${VER} || Build Date: ${build_date}"
+) > build_mod.log 2>&1
 
+send_file build_mod.log "Build Log"
+exit 0
