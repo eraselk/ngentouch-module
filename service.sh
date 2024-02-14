@@ -1,5 +1,5 @@
 #!/system/bin/sh
-source /data/adb/modules/ngentouch_module/script/libcgroup.sh
+. /data/adb/modules/ngentouch_module/script/libcgroup.sh
 sleep 60s
 (
 settings put secure multi_press_timeout 120
