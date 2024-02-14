@@ -9,7 +9,10 @@ send_file() {
 }
 
 # Update source
+if [ -d "$PWD/source" ]; then
 rm -rf source
+fi
+
 git clone https://github.com/eraselk/ngentouch-module source
 cd source
     echo
