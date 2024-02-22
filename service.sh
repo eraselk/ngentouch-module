@@ -22,15 +22,8 @@ elif [[ -e "/sys/module/msm_performance/parameters/touchboost" ]]; then
 echo '0' > /sys/module/msm_performance/parameters/touchboost
 elif [[ -e "/sys/power/pnpmgr/touch_boost" ]]; then
 echo '0' > /sys/power/pnpmgr/touch_boost
-elif [[ -e "/sys/class/touch/switch/set_touchscreen" ]]; then
-echo '7035' > /sys/class/touch/switch/set_touchscreen;
-echo '8002' > /sys/class/touch/switch/set_touchscreen;
-echo '11000' > /sys/class/touch/switch/set_touchscreen;
-echo '13060' > /sys/class/touch/switch/set_touchscreen;
-echo '14005' > /sys/class/touch/switch/set_touchscreen;
-# Disable touch boost mtk, thanks to @nuuwy0 and @SeeNyx.
-elif [[ -e "/proc/perfmgr/tchbst/user/usrtch" ]]; then
-echo "enable 0" > /proc/perfmgr/tchbst/user/usrtch
+elif [[ -e "/proc/perfmgr/tchbst/kernel/tb_enable" ]]; then
+echo "1" > /proc/perfmgr/tchbst/kernel/tb_enable 
 fi
 
 #Scrolling Improvement
@@ -42,9 +35,9 @@ change_task_cgroup "android.phone" "foreground" "stune"
 change_task_cgroup "system_server" "top-app" "cpuset"
 change_task_cgroup "system_server" "foreground" "stune"
 # Max Priority
-renice -n -20 $(pgrep -f surfaceflinger)
-renice -n -20 $(pgrep -f android.phone)
-renice -n -20 $(pgrep -f system_server)
+chsnge_task_nice "surfaceflinger" "-20"
+change_task_nice "android.phone" "-20"
+change_task_nice "system_server" "-20"
 
 # INFO
 su -lp 2000 -c "cmd notification post -S bigtext -t '[🔔] NgenTouch INFO' 'Tag' 'NgenTouch Module has been running  ✅                                        Please Enjoy your Responsivess and Smoothess.'"
